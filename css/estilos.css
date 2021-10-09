@@ -1,0 +1,469 @@
+/*General*/
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+@font-face {
+    font-family: MyFuente;
+    src: url("font/Homer_Simpson.ttf");
+}
+
+@font-face {
+    font-family: MyGoogleSans;
+    src: url("font/ProductSans-Regular.ttf");
+}
+
+/*Cierre General*/
+
+/*Asignamos fuente*/
+#fuentenav {
+    font-family: "MyFuente";
+    font-size: x-large;
+    
+}
+
+/*Cambio TheSimpson Central*/
+#TituloTheSimpsons {
+    display:block;
+    margin:auto;
+    padding: 2%;
+    width: 25%;     
+}
+
+#TituloTheSimpsons:hover{
+    transform: scale(1.1);
+}
+
+
+/*Color del cuerpo*/
+body {
+    background-color: #FACA4C;
+    overflow-x: hidden;
+}
+
+
+/*Apadtar imagenes y textos INICIO*/
+#imgprincipal {
+    margin-top: 10%; 
+    border-radius: 45px;
+}
+
+#textoprincipal {
+    text-align: justify;
+    font-family: "MyFuente";
+    font-size: 140%;
+ 
+}
+
+/*Footer RRSS*/
+#rrss {
+    display: block;
+    margin: auto;
+    
+    width: 25%;
+}
+
+#imgrrss {
+    display: block;
+    width: auto;
+    height: 40px;
+    margin-bottom: -50%;
+}
+
+#imgrrss:hover {
+    transform: scale(1.3);
+}
+
+#txtfooter {
+    color: white;
+    font-family: "MyFuente";
+    font-size: x-large;
+    text-align: center;
+}
+
+.page-footer {
+    background-color: #000; 
+    padding-bottom: 2px;
+}
+
+
+/*Panel personajes*/
+.panel {
+  width: 250px;
+  height: 350px;
+  position: relative;
+  display: block;
+  margin: 10% auto;
+  perspective: 600px;
+}
+
+.front_image,.back_image{
+  display:block;
+  width:250px;
+  height:350px;
+  font-family: cursive;
+  text-align: justify;
+  color: #17181C;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.panel .front {
+  float: none;
+  position: absolute;
+  top: 0px;
+  left:0px;
+  margin: auto;
+  z-index: 900;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  display: block;
+  .border-top-left-radius(3px);
+  .border-top-right-radius(3px);
+
+  transform: rotateX(0deg) rotateY(0deg);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transition: all .4s ease-in-out;
+}
+
+.panel:hover .front{
+  z-index: 900;
+  transform: rotateY(180deg);
+}
+
+.panel .back {
+  float: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index:800;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+
+  transform: rotateY(-180deg);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transition: all .4s ease-in-out;
+}
+
+.panel:hover .back {
+  z-index: 1000;
+  transform: rotateX(0deg) rotateY(0deg);
+}
+
+/*Texto panel personajes*/
+
+.txtpanelcentrado { 
+    text-align: center;
+    font-family: "MyFuente";
+    font-size: xx-large;
+}
+
+#txtpanelatras {
+    font-family: "MyGoogleSans";
+    text-align: left;
+    color: #000;
+}
+
+#txttitulopersonajes {
+    font-family: "MyFuente";
+    font-size: 460%;
+}
+
+/*Lugares*/
+
+    
+.tz-gallery {
+    padding: 40px;
+}
+
+.tz-gallery .lightbox img {
+    margin-left: 15%;
+    margin-top: 4%;
+    width: 80%;
+    transition: 0.2s ease-in-out;
+
+}
+
+
+.tz-gallery .lightbox img:hover {
+    transform: scale(1.05);
+  
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+/*Texto lugares*/
+
+#TituloLugares {
+    font-family: "MyFuente";
+    text-align: center;
+    font-size: 460%;
+    
+}
+
+#SubTituloLugares{
+    font-family: "MyFuente";
+    text-align: center;
+    font-size: 200%;
+}
+
+
+/*Imagenes lugares*/
+ 
+.imagenlugares {
+    width: 103%;
+    margin-top: 6%;
+    height: auto;
+}
+
+#tituloalreves {
+    text-align: right;
+}
+
+.textolugares {
+    font-family: "MyFuente";
+    font-size: x-large;
+    text-align: justify;
+}
+
+.titulolugares {
+    font-family: "MyFuente";
+    font-size: xx-large;
+}
+
+/*Momentos*/
+
+#youtube {
+    text-align: center;
+}
+
+#fuentenavmomentos {
+    font-family: "MyFuente";
+    font-size: x-large;
+    text-align: center;
+}
+
+#SubNavMomentos {
+    font-family: "MyFuente";
+    background-color: #212534;
+}
+
+#txtsubNav {
+    color: #ffff;
+}
+
+
+#SubNavMomentos a:hover{
+    background-color: #ffff;
+    color: #212534;
+    border-radius: 45px;
+    text-decoration:none;
+}
+
+#txtprincipalmomentos{
+    font-family: "MyFuente";
+    font-size: 200%;
+    text-align: justify;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+#arribapng{
+    width: 85px;
+    height: 85px;
+}
+
+#arribapng:hover{
+    transform: scale(1.1);
+}
+
+.apartadosmomentos {
+    font-family: "MyFuente";
+    text-align: center;
+    font-size: 300%;
+}
+
+iframe {
+    border: 2px #ED1B2E;
+    border-radius: 8px;
+}
+
+.gotopbtn{
+    position: fixed;
+    width: 90px;
+    height: 90px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    font-size: 22px;
+  }
+  
+  .gotopbtn:hover{
+    transform: scale(1.2);
+  }
+
+
+/*Creditos*/
+
+.rrssdisney{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+  
+.rrssdisney:hover{
+    transform: scale(1.1);
+}
+
+#lista{
+    text-align: center;
+}
+
+#lista li {
+    color: #000;
+    display:inline;
+    padding-left:3px;
+    padding-right:3px;
+}
+
+#textcreditos{
+    color: #000;
+    font-family: "MyFuente";
+    font-size: xx-large;
+    text-align: center;
+}
+
+#matt {
+    height: 300px;
+    width: auto;
+    float: right;
+}
+
+#creditostext {
+    font-family: "MyFuente";
+    font-size: xx-large;
+    text-align: center;
+}
+
+#disney {
+    height: 70px;
+    width: auto;
+}
+
+#disney:hover{
+    transform: scale(1.1);
+}
+
+#mattcenter {
+    text-align: center;
+}
+
+
+/*Inicio Sesion*/
+
+.InicioSesion {
+    text-align: center;
+    font-size: 300%;
+}
+
+#bodylogin {
+    background-image: url("backgrounds/registro.jpg")   ;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+#login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+#password, #email, #user, #name {
+    font-family: "MyFuente";
+    font-size: x-large;
+    color: #000;
+    background-color: #FACA4C;
+    
+}
+
+
+#NoPassword {
+    text-align: center;
+    font-family: "MyFuente";
+    font-size: x-large;
+    color: black;
+    text-decoration: underline;
+    background-color: #ffff;
+    border-radius: 45px;
+}
+
+#NoPassword:hover {
+    transform: scale(1.1);
+}
+
+#Registrate {
+    color: black    ;
+    font-family: "MyFuente";
+    border-style: dashed;
+    font-size: xx-large;
+    
+}
+
+#btnlogin {
+    font-family: "MyFuente";
+    font-size: 104%;
+}
+
+audio {
+    width: 0%;
+    height: 0%;
+}
+
+/* Recuperar contraseña */
+#recuperarpass {
+    font-family: "MyFuente";
+    text-align: center;
+}
+
+/* Contacto */
+
+#bgcontac {
+    background-image: url("backgrounds/sofa.png");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#buttoncontac {
+    font-family: "MyFuente";
+    font-size: x-large;
+    background-color: #FACA4C;
+    border-radius: 15px;
+    padding: 1%;
+    color: grey;
+}
+
+#buttoncontac:hover {
+    transform: scale(1.1);
+}
+
+.firmasanchez:hover {
+    transform: scale(1.1);
+}
